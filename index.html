@@ -17,10 +17,10 @@
         <h1>Let Wunderlust Travel help you plan the trip of your dreams!</h1>
         <nav>
             <ul>
-                <li><a href="#">Destinations</a></li>
+                <li><a href="destination">Destinations</a></li>
                 <li><a href="#">Inspirations</a></li>
                 <li><a href="#">Special</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -112,7 +112,12 @@
                 <h2>Testimonials</h2>
                 <hr>
                 <div class="testimonial">
-                    <img src="miranda-blake.png" alt="Miranda Blake">
+                    <picture>
+                        <source srcset="miranda-blake-S.png" media="(max-width: 600px)">
+                        <source srcset="miranda-blake-M.png" media="(max-width: 1200px)">
+                        <img src="miranda-blake-L.png" alt="Miranda Blake">
+                    </picture>
+                    
                     <h3>Miranda Blake</h3>
                     <p>Traveling From: London, England</p>
                     <blockquote>“I traveled here for business, but my stay was extended. Now it is my home.”</blockquote>
@@ -187,6 +192,53 @@
                     <p>Population: 923,608</p>
                 </div>
             </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br><br>
+    
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br><br>
+    
+                <label for="contactMethod">Preferred Contact Method:</label>
+                <select id="contactMethod" name="contactMethod" required>
+                    <option value="Email">Email</option>
+                    <option value="Text">Text</option>
+                    <option value="Phone">Phone</option>
+                </select><br><br>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter telephone number"><br><br>
+    
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Ibiza">Ibiza</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Majorca">Majorca</option>
+                    <option value="Seville">Seville</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="Valencia">Valencia</option>
+                </select><br><br>
+    
+                <label for="travelTime">Travel Time:</label>
+                <select id="travelTime" name="travelTime" required>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Flexible">Flexible</option>
+                </select><br><br>
+    
+                <button type="submit">Submit</button>
+            </form>
         </section>
 
         
