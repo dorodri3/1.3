@@ -208,49 +208,52 @@
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br><br>
-    
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br><br>
-    
-                <label for="contactMethod">Preferred Contact Method:</label>
-                <select id="contactMethod" name="contactMethod" required>
-                    <option value="Email">Email</option>
-                    <option value="Text">Text</option>
-                    <option value="Phone">Phone</option>
-                </select><br><br>
-    
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
-    
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter telephone number"><br><br>
-    
-                <label for="destination">Destination:</label>
-                <select id="destination" name="destination" required>
-                    <option value="Barcelona">Barcelona</option>
-                    <option value="Granada">Granada</option>
-                    <option value="Ibiza">Ibiza</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Majorca">Majorca</option>
-                    <option value="Seville">Seville</option>
-                    <option value="Tenerife">Tenerife</option>
-                    <option value="Valencia">Valencia</option>
-                </select><br><br>
-    
-                <label for="travelTime">Travel Time:</label>
-                <select id="travelTime" name="travelTime" required>
-                    <option value="Fall">Fall</option>
-                    <option value="Winter">Winter</option>
-                    <option value="Spring">Spring</option>
-                    <option value="Summer">Summer</option>
-                    <option value="Flexible">Flexible</option>
-                </select><br><br>
-    
-                <button type="submit">Submit</button>
-            </form>
+    <form action="submit_form.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br><br>
+
+        <label for="contactMethod">Preferred Contact Method:</label>
+        <select id="contactMethod" name="contactMethod" required>
+            <option value="" disabled selected>Select contact method</option>
+            <option value="Email">Email</option>
+            <option value="Text">Text</option>
+            <option value="Phone">Phone</option>
+        </select><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter telephone number"><br><br>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="" disabled selected>Select destination</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Granada">Granada</option>
+            <option value="Ibiza">Ibiza</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Majorca">Majorca</option>
+            <option value="Seville">Seville</option>
+            <option value="Tenerife">Tenerife</option>
+            <option value="Valencia">Valencia</option>
+        </select><br><br>
+
+        <label for="travelTime">Travel Time:</label>
+        <select id="travelTime" name="travelTime" required>
+            <option value="" disabled selected>Select travel time</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Flexible">Flexible</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
         </section>
 
         
