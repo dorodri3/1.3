@@ -6,13 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <header>
         <div class="logo">
             <picture>
-                <source srcset="logo-S.png" media="(max-width: 600px)">
-                <source srcset="logo-M.png" media="(max-width: 1200px)">
-                <img src="logo-L.png" alt="logo">
-            </picture>
+                <picture>
+                    <source srcset="logo-S.png" media="(max-width: 320px)">
+                    <source srcset="logo-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                    <source srcset="logo-L.png" media="(min-width: 781px) and (max-width: 1024px)">
+                    <img src="logo-L.png" alt="logo">
+                </picture>
+                
         </div>
         <h1>Let Wunderlust Travel help you plan the trip of your dreams!</h1>
         <nav>
@@ -24,25 +28,29 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <section class="destination">
             <h2>Majorca</h2>
             <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
             <div class="images">
-                <picture>
-                    <source srcset="majorca-waves-S.png" media="(max-width: 600px)">
-                    <source srcset="majorca-waves-M.png" media="(max-width: 1200px)">
+                <picture>                  
+                    <source srcset="majorca-waves-S.png" media="(max-width: 320px)">                 
+                    <source srcset="majorca-waves-M.png" media="(min-width: 321px) and (max-width: 780px)">                  
+                    <source srcset="majorca-waves-L.png" media="(min-width: 781px) and (max-width: 1024px)">  
                     <img src="majorca-waves-L.png" alt="Waves in Majorca">
-                </picture>
+                </picture>               
                 <picture>
-                    <source srcset="majorca-beach-S.png" media="(max-width: 600px)">
-                    <source srcset="majorca-beach-M.png" media="(max-width: 1200px)">
-                    <img src="majorca-beach-L.png" alt="Waves in Majorca">
+                    <source srcset="majorca-beach-S.png" media="(max-width: 320px)">
+                    <source srcset="majorca-beach-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                    <source srcset="majorca-beach-L.png" media="(min-width: 781px) and (max-width: 1024px)">
+                    <img src="majorca-beach-L.png" alt="Beach in Majorca">
                 </picture>
+                
                 <picture>
-                    <source srcset="majorca-cove-S.png" media="(max-width: 600px)">
-                    <source srcset="majorca-cove-M.png" media="(max-width: 1200px)">
-                    <img src="majorca-cove-L.png" alt="Waves in Majorca">
+                    <source srcset="majorca-cove-S.png" media="(max-width: 320px)">
+                    <source srcset="majorca-cove-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                    <source srcset="majorca-cove-L.png" media="(min-width: 781px) and (max-width: 1024px)">
+                    <img src="majorca-cove-L.png" alt="Cove in Majorca">
                 </picture>
             </div>
         </section>
@@ -113,8 +121,9 @@
                 <hr>
                 <div class="testimonial">
                     <picture>
-                        <source srcset="miranda-blake-S.png" media="(max-width: 600px)">
-                        <source srcset="miranda-blake-M.png" media="(max-width: 1200px)">
+                        <source srcset="miranda-blake-S.png" media="(max-width: 320px)">
+                        <source srcset="miranda-blake-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                        <source srcset="miranda-blake-L.png" media="(min-width: 781px) and (max-width: 1024px)">                    
                         <img src="miranda-blake-L.png" alt="Miranda Blake">
                     </picture>
                     
@@ -125,10 +134,12 @@
                 <hr>
                 <div class="testimonial">
                     <picture>
-                        <source srcset="max-winter-S.png" media="(max-width: 600px)">
-                        <source srcset="max-winter-M.png" media="(max-width: 1200px)">
+                        <source srcset="max-winter-S.png" media="(max-width: 320px)">
+                        <source srcset="max-winter-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                        <source srcset="max-winter-L.png" media="(min-width: 781px) and (max-width: 1024px)">
                         <img src="max-winter-L.png" alt="Max Winter">
                     </picture>
+                    
                     <h3>Max Winter</h3>
                     <p>Traveling From: Berlin, Germany</p>
                     <blockquote>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</blockquote>
@@ -136,10 +147,12 @@
                 <hr>
                 <div class="testimonial">
                     <picture>
-                        <source srcset="ines-villegoes-S.png" media="(max-width: 600px)">
-                        <source srcset="ines-villegoes-M.png" media="(max-width: 1200px)">
+                        <source srcset="ines-villegoes-S.png" media="(max-width: 320px)">
+                        <source srcset="ines-villegoes-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                        <source srcset="ines-villegoes-L.png" media="(min-width: 781px) and (max-width: 1024px)">
                         <img src="ines-villegoes-L.png" alt="Inés Villegoes">
                     </picture>
+                    
                     <h3>Inés Villegoes</h3>
                     <p>Traveling From: Barcelona, Spain</p>
                     <blockquote>“A very safe environment for all travelers.”</blockquote>
@@ -147,10 +160,12 @@
                 <hr>
                 <div class="testimonial">
                     <picture>
-                        <source srcset="carmen-lorenzo-S.png" media="(max-width: 600px)">
-                        <source srcset="carmen-lorenzo-M.png" media="(max-width: 1200px)">
+                        <source srcset="carmen-lorenzo-S.png" media="(max-width: 320px)">
+                        <source srcset="carmen-lorenzo-M.png" media="(min-width: 321px) and (max-width: 780px)">
+                        <source srcset="carmen-lorenzo-L.png" media="(min-width: 781px) and (max-width: 1024px)">
                         <img src="carmen-lorenzo-L.png" alt="Carmen Lorenzo">
                     </picture>
+                    
                     <h3>Carmen Lorenzo</h3>
                     <p>Traveling From: Madrid, Spain</p>
                     <blockquote>“Live, laugh, love-- everything you need in Majorca.”</blockquote>
