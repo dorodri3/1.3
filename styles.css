@@ -57,42 +57,134 @@ table {
 
 
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    background-color: #f0f4f8;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Molle', cursive;
-    color: #333;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-p {
-    line-height: 1.6;
-}
-
 header {
     background: linear-gradient(to bottom, #55BCD5, #EAEAEA);
     padding: 1.5rem;
     text-align: center;
     position: relative;
+}
+
+
+#logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+
+#contact {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact h3 {
+    color: #222222;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contact label {
+    color: #222222;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+
+#contact input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#contact fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+#contact legend {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222222;
+}
+
+#contact .radio-label {
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #222222;
+}
+
+#contact input[type="submit"] {
+    background-color: #9B26B0;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #F6D64A;
+    color: #222222;
+}
+
+
+#plan {
+    background-color: #F6D64A;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+#plan h3 {
+    margin-bottom: 1.5rem;
+    color: #222222;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#plan div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#plan section {
+    text-align: center;
+    background-color: #55BCD5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#plan section:hover {
+    transform: scale(1.05);
+}
+
+
+#plan h4 {
+    color: #222222;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#plan img {
+    width: 50px;
+    height: 50px;
 }
