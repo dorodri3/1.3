@@ -471,7 +471,7 @@ footer a:hover {
 
 
 
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1366px) {
     
     #menu-toggle {
         display: flex; 
@@ -874,22 +874,106 @@ footer a:hover {
 
 
 
-
-@media (min-width: 1920px) {
-
+@media (min-width: 1367px) {
 
 
 
+#intro {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f8ff, #ffffff); 
+}
+
+#intro h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px; 
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#intro #img-grid {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
+    gap: 10px; 
+    max-width: 500px; 
+}
+
+#intro #img-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#intro #img-grid picture {
+    grid-column: span 2; 
+
+}
 
 
 
 
+    
+    #menu-toggle {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
 
+    #menu-toggle input[type="checkbox"],
+    #menu-toggle label {
+        display: none; 
+    }
 
+    #menu-toggle ul {
+        display: flex; 
+        gap: 2rem; 
+        position: static; 
+        background: none; 
+        box-shadow: none; 
+        padding: 0;
+        margin: 0;
+    }
 
+    #menu-toggle ul li {
+        margin: 0;
+    }
 
+    #menu-toggle ul li a {
+        display: inline-block; 
+        font-size: 1.2rem; 
+        font-weight: bold;
+        text-decoration: none;
+        color: #222; 
+        padding: 0.8rem 2rem; 
+        border-radius: 5px; 
+        background-color: #fff;
+        border: 1px solid #ccc; 
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
 
+    #menu-toggle ul li a.active {
+        background-color: #F6D64A; 
+        border-color: transparent; 
+        color: #000; 
+    }
 
+    #menu-toggle ul li a:hover {
+        background-color: #f0f0f0; 
+        border-color: #bbb; 
+    }
 
 
 
