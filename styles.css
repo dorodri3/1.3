@@ -51,7 +51,7 @@ table {
 }
 
 /* General Reset */
-body, h1, h2, h3, h4, p {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -68,37 +68,38 @@ body {
 header {
     background-color: #F6D64A; /* Yellow */
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
     position: relative;
 }
 
 header #logo img {
-    max-width: 100px;
+    max-width: 80px;
     vertical-align: middle;
 }
 
 header h1 {
     font-family: 'Molle', cursive;
-    font-size: 3em;
+    font-size: 2.8em;
     color: #000000; /* Black */
-    margin: 15px 0;
+    margin-top: 10px;
 }
 
 header p {
     color: #222222; /* Dark Gray */
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* Navigation Styling */
 nav {
     background-color: #499BD2; /* Blue */
-    padding: 15px 0;
+    padding: 10px 0;
+    position: relative;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -109,221 +110,95 @@ nav li {
 nav a {
     color: #FFFFFF; /* White */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #F6D64A; /* Yellow to match header on hover */
+    color: #F6D64A; /* Yellow on hover */
 }
 
-/* Main Content */
-#main-content {
-    padding: 40px 20px;
+/* Mobile Menu Toggle */
+#menu-toggle {
+    display: none; /* Initially hidden */
 }
 
-#intro {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#intro p {
-    max-width: 800px;
-    margin: 20px auto;
-    color: #222222; /* Dark Gray */
-    font-size: 1.1em;
-}
-
-#img-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-#img-grid img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Plan Your Trip Section */
-#plan {
-    background-color: #EAEAEA; /* Light Gray */
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
-
-#plan h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #499BD2; /* Blue */
-}
-
-#plan div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-}
-
-#plan section {
-    background-color: #FFFFFF; /* White */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#plan section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#plan img {
-    max-width: 80px;
-    margin-bottom: 15px;
-}
-
-/* Testimonials Section */
-#testimonials {
-    background-color: #F6D64A; /* Yellow */
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
-
-#testimonials h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #222222; /* Dark Gray */
-}
-
-#testimonials div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-#testimonials section {
-    background-color: #FFFFFF; /* White */
-    padding: 20px;
-    border-radius: 10px;
-    width: 220px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#testimonials img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-/* About Section */
-#about {
-    background-color: #EAEAEA; /* Light Gray */
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
-
-#about h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #499BD2; /* Blue */
-}
-
-#about div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-#about section {
-    background-color: #FFFFFF; /* White */
-    padding: 20px;
-    border-radius: 10px;
-    width: 180px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#about img {
-    max-width: 60px;
-    margin-bottom: 15px;
-}
-
-/* Contact Us Form */
-#contact {
-    background-color: #FFFFFF; /* White */
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto 50px auto;
-}
-
-#contact h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #9B26B0; /* Purple */
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #222222; /* Dark Gray */
-}
-
-form input, form select {
-    width: 100%;
+#menu-toggle label {
+    display: none;
+    background-color: #55BCD5; /* Teal */
+    color: #FFFFFF; /* White */
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    background-color: #9B26B0; /* Purple */
-    color: #FFFFFF; /* White */
-    border: none;
     cursor: pointer;
-    padding: 12px 20px;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-top: 15px;
+    font-size: 1.2em;
 }
 
-form input[type="submit"]:hover {
-    background-color: #222222; /* Dark Gray */
+#menu-toggle input {
+    display: none;
 }
 
-/* Footer Styling */
-footer {
+#menu-toggle ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #499BD2; /* Blue */
+}
+
+#menu-toggle input:checked + label + ul {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: #222222; /* Dark Gray */
-    color: #FFFFFF; /* White */
-    padding: 20px 0;
-    margin-top: 30px;
 }
 
-footer a {
+#menu-toggle ul li {
+    padding: 10px 0;
+}
+
+#menu-toggle ul li a {
     color: #FFFFFF; /* White */
     text-decoration: none;
-    margin: 0 15px;
+    display: block;
+    text-align: center;
 }
 
-footer a:hover {
-    text-decoration: underline;
+#menu-toggle ul li a:hover {
+    background-color: #55BCD5; /* Teal */
+    color: #FFFFFF; /* White */
+    padding: 5px;
+}
+
+/* Media Query for Mobile Menu */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+        text-align: center;
+    }
+
+    #menu-toggle label {
+        display: block;
+        background-color: #499BD2; /* Blue */
+        color: #FFFFFF; /* White */
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    #menu-toggle ul {
+        display: none;
+        flex-direction: column;
+        background-color: #499BD2; /* Blue */
+    }
+
+    #menu-toggle input:checked + label + ul {
+        display: flex;
+    }
 }
 
 
